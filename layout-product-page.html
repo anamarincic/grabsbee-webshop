@@ -301,39 +301,40 @@
                 <p class="product__available">In stock</p>
                 <form action=""  id="productInfo">
 
-                    <p class="product__sku"><strong>SKU</strong>WH12</p>
+                    <p class="product__sku"><strong>SKU</strong><span> WH12</span></p>
+                    <input name="sku" type="hidden" value="WH12">
                     <small class="product__quote">Be the first to review this product</small>
     
                    <div class="price-box">
                        <span>As low as:</span>
                        <span class="product__price">$21.99</span>
+                       <input name="price" type="hidden" value="$21.99">
                    </div>
-                   
-                   <dl class="products__colors">
-                        <dt>Color:</dt>
-                        <dd class="product__color"><img src="assets/img/swatch/Rectangle 55.png"></dd>
-                        <dd class="product__color"><img src="assets/img/product-item/swatch/Rectangle 55.svg"></dd>
-                    </dl>
+
+                   <input type="checkbox" name="color" value="black" id="black" class="color black"/>
+                   <label for="black"></label>
+                   <input type="checkbox" name="color" value="orange" id="orange" class="color orange"/>
+                   <label for="orange"></label>
 
                     <div class="qty_form">
                         <fieldset>
                             <legend class="hidden">Item qty</legend>
-                            <label for="qty">Qty:</label>
-                            <input name="qty" type="number" class="qty">
+                            <label for="quantity">Qty:</label>
+                            <input name="quantity" type="number" class="qty" min="1" max="20">
                         </fieldset>
                         <button class="button button--primary button_shop" type="submit">Add to Cart</button>
                     </div>
-                    <ul class="user_review">
-                        <li>
-                            <a href="" title="Add to wishlist" class="user_review-icon">
-                                <span class="icon-heart"></span> Add to Wishlist</a>
-                        </li>
-                        <li>
-                            <a href="" title="Add to Compare" class="user_review-icon">
-                                <span class="icon-bar-chart"></span> Add to Compare</a>
-                        </li>
-                    </ul>
                 </form>
+                <ul class="user_review">
+                    <li>
+                        <a href="" title="Add to wishlist" class="user_review-icon">
+                            <span class="icon-heart"></span> Add to Wishlist</a>
+                    </li>
+                    <li>
+                        <a href="" title="Add to Compare" class="user_review-icon">
+                            <span class="icon-bar-chart"></span> Add to Compare</a>
+                    </li>
+                </ul>
             </div>
 
         </div>

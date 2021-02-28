@@ -45,20 +45,6 @@ function openInformation(informationName) {
   document.getElementById(informationName).style.display = "block";  
 }
 
-// select color
-
-const colors = document.querySelectorAll(".product__color");
-
-colors.forEach(function(color){
-
-    color.addEventListener("click", function(){
-      
-        colors.forEach(function(item){
-            item.classList.remove("active");
-        })
-        color.classList.add("active");
-    })
-})
 
 
 // get Data from product
