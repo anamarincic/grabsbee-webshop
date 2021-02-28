@@ -1,0 +1,86 @@
+$container-width: 1600px;
+$container-gutter: 8px;
+$bp-large: 1024px;
+
+@custom-media --large (min-width: $bp-large);
+@custom-media --mobile (max-width: $bp-large);
+
+:root {
+  --blue-color: #12167a;
+  --red-color: #EC1D2E;
+  --gray-color: #4E4E4E;
+  --pure-black: #000;
+  --white-color: #FFF;
+
+  /* Primary colors */
+  --primary__color: var(--blue-color);
+
+  /* Secondary colors */
+
+  --secondary__color: var(--red-color);
+  --secondary-10: #B9121D;
+  --secondary-20: #D51727;
+  --secondary-30: #740D15;
+  --secondary-90: #D00505;
+
+  /* Neutral colors */
+  --neutral__color: var(--gray-color);
+  --neutral-5: #E8E8E8;
+  --neutral-10: #CFCFCF;
+  --neutral-25: #9C9C9C;
+  --neutral-60: #828282;
+  --neutral-90: #696969;
+
+  /* Warnings colors */
+  --success__color: #32D08D;
+  --error__color: #F14F39;
+  --warning__color: #F1B239;
+
+  /* Components */
+  --input-background-color-default: var(--white-color);
+  --input-background-color-disabled: var(--neutral-5);
+
+  --input-border-color-default: var(--neutral-25);
+  --input-border-color-focus: var(--neutral__color);
+  --input-border-color-error: var(--secondary__color);
+
+  --form-label-color: var(--pure-black);
+  --form-placeholder-color: var(--neutral-60);
+  --form-help-txt-color: var(--neutral-90);
+
+  --search-placeholder-color: var(--white-color);
+  --search-border-color-default: var(--secondary__color);
+
+  /* Text */
+  --text__color: var(--neutral__color);
+  --text__color__invert: var(--white-color);
+  --text__color__intense: var(--white-color);
+  --text__color__muted: var(--neutral-10);
+
+  /* Links */
+  --link__color: var(--secondary__color);
+  --link__visited__color: var(--secondary-10);
+  --link__hover__color: var(--secondary-20);
+  --link__active__color: var(--secondary-30);
+
+  /* Buttons */
+  --button-primary__color: var(--white-color);
+  --button-primary__background: var(--primary__color);
+  --button-primary__background--hover: var(--secondary__color);
+  --button-primary__border: var(--white-color);
+
+  --button-secondary__background: var(--white-color);
+  --button-secondary__border: var(--secondary__color);
+  --button-secondary__color: var(--secondary__color);
+
+  /* Icons */
+  --icon-regular-color: var(--neutral__color);
+  --icon-dark-bg-color: var(--white-color);
+  --icon-indicator-color: var(--neutral__color);
+  --icon-indicator-dark-bg-color: var(--neutral-90);
+  --icon-link: var(--secondary__color);
+
+  /* Headings */
+  --headings__type: "Anton", sans-serif;
+  --body__type: "Open Sans", sans-serif;
+}

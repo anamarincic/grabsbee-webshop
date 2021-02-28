@@ -1,0 +1,31 @@
+.breadcrumb {
+    @mixin flex row, baseline, space-between, nowrap;
+    width: 250px;
+}
+
+.breadcrumb_category {
+    width: 100px;
+}
+
+.breadcrumb__item {
+    font-size: 12px;
+    margin-top: 25px;
+    padding-bottom: 25px;
+}
+  
+.breadcrumb__item_three {
+      color: var(--neutral__color);
+      font-weight: bold;
+}
+  
+.breadcrumb__link {
+      text-decoration: none;
+      color: var(--secondary__color);
+}
+  
+.breadcrumb__icon {
+    font-size: 10px;
+    &:before {
+        @mixin icon-font-display "\e90b";
+      }
+} 

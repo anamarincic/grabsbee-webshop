@@ -1,0 +1,33 @@
+.display-block {
+  display: block;
+}
+
+.no-scroll {
+  overflow: hidden;
+  height: 100%;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.visualy-hidden {
+  @mixin no-display;
+}
+
+.visualy-hidden--desktop {
+  @media (--large) {
+    @mixin no-display;
+  }
+}
+
+.visualy-hidden--mobile {
+  @media (--mobile) {
+    @mixin no-display;
+  }
+}
+
+
+
+
+   

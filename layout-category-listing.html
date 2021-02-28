@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Inova Category Name">
+    <title>Grabsee Category Name - Best place to get profi frisbee gear</title>
+
+    <link href="./style.css" rel="stylesheet" type="text/css"/>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+ 
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container header__content">
+            <h2 class="logo">
+                <a href="./index.html" class="logo__link">
+                    <img src="./assets/img/grabsbee.svg" alt="Grabsee Webshop logo" class="logo__img">
+                </a>
+            </h2>
+
+            <ul class="header__drawers-list">
+                <li class="header__drawers-list__item">
+                    <button id="showSearch" class="button--no-styles header__buttons">
+                        <span class="icon-search"></span> 
+                        <span class="visualy-hidden">Search From Trigger</span>
+                    </button>
+                    <div id="overlaySearch" class="overlay-search"></div>
+                    <div id="searchTab" class="visualy-search-area">
+                        <form>
+                            <div>
+                                <div class="search-area__tab">
+                                    <legend tabindex="0" class="visualy-hidden">Grabsee search form</legend>
+                                    <label tabindex="0" for="search" class="visualy-hidden">Search entire store here..</label>
+                                    <input class="tab__search" name="search" type="search" placeholder="Search entire store here.." aria-label="Search through site content">
+                                    <button class="button--no-styles button_search">
+                                        <span class="icon-search"></span>
+                                        <span class="visualy-hidden">Search it</span>
+                                    </button>
+                                </div>
+                                <div>
+                                    <button id="closeSearch" class="button--no-styles header__buttons close_search">
+                                        <span>Close</span>
+                                        <span class="icon-x-circle"></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </li>
+                
+                <li class="header__drawers-list__item">
+                    <button id="showCart" class="button--no-styles header__buttons">
+                        <span class="icon-shopping-cart"></span> 
+                        <span class="visualy-hidden">Cart</span>
+                    </button>
+
+                    <div class="overlay-cart" id="overlay"></div>
+
+                    <div class="visualy-shoping-cart" id="modal">
+                        <button id="closeCart" class="button--no-styles close__button">
+                            <span>Close</span>
+                            <span class="icon-x-circle"></span>
+                        </button>
+                        <div  class="visualy-hidden">
+                            <h2>
+                                <span class="shopping-cart__title">xy item in Cart</span>
+                            </h2>
+                            <p class="shopping-cart__status">Recently added items</p>
+                            <div class="shopping-cart__content">
+                                <div class="shopping-cart__item">
+                                    <div>
+                                        <img src="assets/img/image 1.svg" alt="Item name 1">
+                                    </div>
+    
+                                    <div>
+                                        <h3>
+                                            <a href="" class="shopping-cart__item-name">Inova Pulsar | Major league Ultimate</a>
+                                        </h3>
+                    
+                                        <dl>
+                                            <dt tabindex="0" class="shopping-cart__item-information">Color</dt>
+                                            <dd tabindex="0" class="shopping-cart__item-content">Black</dd>
+                                            <dt tabindex="0" class="visualy shopping-cart__item-information">Price</dt>
+                                            <dd tabindex="0" class="shopping-cart__item-content">10$</dd>
+                                            <dt tabindex="0" class="shopping-cart__item-information">Qty:</dt>
+                                            <dd class="shopping-cart__item-content">
+                                                <form>
+                                                    <fieldset>
+                                                        <legend class="visualy-hidden">Items qty form</legend>
+                                                        <label for="qty" class="visualy-hidden">Items in Cart</label>
+                                                        <input name="qty" type="number" class="shopping-cart__qty">
+                                                    </fieldset>
+                                                </form>
+                                            </dd>
+                                        </dl>
+                                        <div class="shopping-cart__edit">
+                                            <a class="icon-edit edit"></an>
+                                            <a class="icon-trash delete"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="shopping-cart__item">
+                                    <div>
+                                        <img src="assets/img/image 1.png" alt="Item name 2">
+                                    </div>
+    
+                                    <div class="shopping-cart__item-information">
+
+                                        <h3 class="shopping-cart__item-name">
+                                            <a href="" class="shopping-cart__item-name">Inova Pulsar | Major league Ultimate</a>
+                                        </h3>
+                    
+                                        <dl>
+                                            <dt tabindex="0" class="shopping-cart__item-information">Color</dt>
+                                            <dd tabindex="0" class="shopping-cart__item-content">Orange</dd>
+                                            <dt tabindex="0" class="visualy shopping-cart__item-information">Price</dt>
+                                            <dd tabindex="0" class="shopping-cart__item-content">10$</dd>
+                                            <dt tabindex="0" class="shopping-cart__item-information">Qty:</dt>
+                                            <dd class="shopping-cart__item-content">
+                                                <form>
+                                                    <fieldset>
+                                                        <legend class="visualy-hidden">Items qty form</legend>
+                                                        <label for="qty" class="visualy-hidden">Items in Cart</label>
+                                                        <input name="qty" type="number" class="shopping-cart__qty">
+                                                    </fieldset>
+                                                </form>
+                                            </dd>
+                                        </dl>
+
+                                        <div class="shopping-cart__edit">
+                                            <a class="icon-edit edit"></a>
+                                            <a class="icon-trash delete"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <table>
+                                <caption class="visualy-hidden">Your Cart Totals table</caption>
+                                <tbody>
+                                    <tr>
+                                        <th tabindex="0">Subtotal</th>
+                                        <td tabindex="0">$$</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <hr>
+                            <div class="shopping-cart__interaction">
+                                <a href="" title="Back to Cart page" class="shopping-cart__interaction-edit">View and edit cart</a>
+                                <button class="button button--primary">Proceed to checkout</button>
+                            </div>
+                        </div>
+                        <div class="shopping-cart__empty">
+                            <strong>You have no items in your shopping cart.</strong>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="header__drawers-list__item">
+                    <button id="showNav" class="button--no-styles header__buttons visualy-hidden--desktop">
+                        <span class="icon-menu"></span> 
+                        <span class="visualy-hidden">Navigation Trigger</span>
+                    </button>
+                    
+                   <div id="navMenu" class="navigation__list">
+                      <h2 class="navigation__list-title visualy-hidden--desktop">Menu</h2>
+                    <nav>
+                        <ul class="container navigation__inner">
+                            <li class="navigation__inner-item">
+                                <h2 class="navigation__inner-title" data-view="frisbees">Frisbees<span class="icon-chevron-down navigation__icon"></span></h2>
+                                
+                                <div class="navigation__inner-content frisbees">
+                                    <div class="navigation__content">
+                                        <h3 tabindex="0" class="navigation__content-title">Ultimate Frisbees</h3>
+    
+                                        <ul class="visualy-hidden--mobile">
+                                            <li><a href="./layout-category-listing.html" class="navigation-content-links">Innova Pulsar</a></li>
+                                            <li><a href="./layout-category-listing.html" class="navigation-content-links">Xcom</a></li>
+                                            <li><a href="./layout-category-listing.html" class="navigation-content-links">Aviator - Marvel Captian America</a></li>
+                                        </ul>
+                                    </div>
+    
+                                    <div class="navigation__content">
+                                        <h3 tabindex="0"class="navigation__content-title">Recreational</h3>
+    
+                                        <ul class="visualy-hidden--mobile">
+                                            <li><a href="./layout-category-listing.html" class="navigation-content-links">Nite</a></li>
+                                            <li><a href="./layout-category-listing.html" class="navigation-content-links">Yikin</a></li>
+                                        </ul>
+                                    </div>
+    
+                                    <div class="navigation__content">
+                                        <h3 class="navigation__content-title">Contact us</h3>
+    
+                                        <ul class="visualy-hidden--mobile">
+                                            <li tabindex="0" class="navigation-content-links">Trg Slobode 6</li>
+                                            <li><a href="tel:+385958811630" class="navigation-content-links">+385 95 8811630</a></li>
+                                            <li><a href="mailto:filip.svetlicic@gmail.com" class="navigation-content-links">filip.svetlicic@gmail.com</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="navigation__inner-item">
+                                <h2 class="navigation__inner-title" data-view="clothing">Clothing<span class="icon-chevron-down navigation__icon"></span></h2>
+                                
+                                <div class="navigation__inner-content clothing">
+                                    <div class="navigation__content">
+                                        <h3 tabindex="0" class="navigation__content-title">Ultimate Frisbees</h3>
+    
+                                        <ul class="visualy-hidden--mobile">
+                                            <li><a href="./layout-category-listing.html" class="navigation-content-links">Innova Pulsar</a></li>
+                                            <li><a href="./layout-category-listing.html" class="navigation-content-links">Xcom</a></li>
+                                            <li><a href="./layout-category-listing.html" class="navigation-content-links">Aviator - Marvel Captian America</a></li>
+                                        </ul>
+                                    </div>
+    
+                                    <div class="navigation__content">
+                                        <h3 tabindex="0"class="navigation__content-title">Recreational</h3>
+    
+                                        <ul class="visualy-hidden--mobile">
+                                            <li><a href="./layout-category-listing.html" class="navigation-content-links">Nite</a></li>
+                                            <li><a href="./layout-category-listing.html" class="navigation-content-links">Yikin</a></li>
+                                        </ul>
+                                    </div>
+    
+                                    <div class="navigation__content">
+                                        <h3 class="navigation__content-title">Contact us</h3>
+    
+                                        <ul class="visualy-hidden--mobile">
+                                            <li tabindex="0" class="navigation-content-links">Trg Slobode 6</li>
+                                            <li><a href="tel:+385958811630" class="navigation-content-links">+385 95 8811630</a></li>
+                                            <li><a href="mailto:filip.svetlicic@gmail.com" class="navigation-content-links">filip.svetlicic@gmail.com</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <h2 class="navigation__inner-title">Accessories<span class="icon-chevron-down navigation__icon"></span></h2>
+                            </li>
+                            <li>
+                                <h2 class="navigation__inner-title">Contact us<span class="icon-chevron-down navigation__icon"></span></h2>
+                            </li>
+                        </ul>
+
+                        <button id="closeNav" class="button--no-styles header__buttons menu_button">
+                            <span>Close</span>
+                            <span class="icon-x-circle"></span>
+                        </button>
+                    </nav>
+                </div>
+
+                </li>
+            </ul>
+        </div>
+    </header>
+
+
+
+    <div class="container">
+        <ul class="breadcrumb breadcrumb_category" aria-label="breadcrumb">
+            <li class="breadcrumb__item" aria-label="breadcrumb">
+                <a class="breadcrumb__link" href="/index.html" title="Grabsee Home">Home</a>
+            </li>
+            <span class="breadcrumb__icon"></span>
+            <li class="breadcrumb__item breadcrumb__item_three" aria-label="breadcrumb" aria-current="location" tabindex="0">Frisbee</li>
+        </ul>
+
+        <h1 class="main__title">Ultimate Frisbee</h1>
+
+        <hr class="main__line">
+    </div>
+
+    <div class="container categories__content">
+        <main class="main__content">
+
+            <section>
+                <button id="showSidebar" class="button button--secondary visualy-hidden--desktop">Shop by <span class="icon-plus-circle"></span></button>
+    
+                <div class="toolbar">
+
+                    <div class="links">
+                        <ul class="toolbar__buttons">
+                            <li>
+                                <button class="button button--secondary toolbar__button li-grid active" data-view = "grid-view" title="Grid View">
+                                    <span class="icon-grid"></span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="button button--secondary toolbar__button li-list" data-view = "list-view" title="List View">
+                                    <span class="icon-list"></span>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="toolbar__sort">
+                        <label for="sort-by" class="toolbar__sort__title">Sort by:</label>
+                        <select type="select" name="sort-by" id="sort-by">
+                            <option value="best-sellers">Best seller</option>
+                            <option value="price">Price</option>
+                            
+                        </select>
+                        <button class="" title="Set direction"><span class="icon-arrow-down"></span></button>
+                    </div>
+                </div>
+
+                <div class="view-main">
+                    <div class="view-wrap grid-view" style="display: grid;">
+                        <div class="product">
+                            <picture class="product-list__pic">
+                                <a href="/layout-product-page.html"><img src="assets/img/product-item/image 2.svg" alt="Product image"></a>
+                            </picture>
+    
+                            <div class="product__info">
+                                <h2 class="product__list__title">Innova Pulsar</h2>
+                                
+                                <div class="rating__summary">
+                                   <span class="icon-star"></span>
+                                   <p class="rating__num">2</p>
+                                </div>
+    
+                                <p class="price">As low as <strong>$21.99</strong></p>
+    
+                                <form action="" class="product_form">
+                                    <input type="hidden" name="product" value="">
+                                    <button type="submit" class="button button--primary product__button">Add to Cart</button>
+                                </form>
+                                <ul class="product__icons">
+                                    <li>
+                                       <a href="" title="Add to wishlist"><span class="icon-heart product__icon"></span></a>
+                                    </li>
+                                    <li>
+                                       <a href="" title="Add to Compare"><span class="icon-bar-chart product__icon"></span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <picture class="product-list__pic">
+                                <a href="/layout-product-page.html"><img src="assets/img/product-item/image 2.svg" alt="Product image"></a>
+                            </picture>
+    
+                            <div class="product__info">
+                                <h2 class="product__list__title">Innova Pulsar</a></h2>
+                                
+                                <div class="rating__summary">
+                                   <span class="icon-star"></span>
+                                   <p class="rating__num">2</p>
+                                </div>
+    
+                                <p class="price">As low as <strong>$21.99</strong></p>
+    
+                                <form action="" class="product_form">
+                                    <input type="hidden" name="product" value="">
+                                    <button type="submit" class="button button--primary product__button">Add to Cart</button>
+                                </form>
+                                <ul class="product__icons">
+                                    <li>
+                                       <a href="" title="Add to wishlist"><span class="icon-heart product__icon"></span></a>
+                                    </li>
+                                    <li>
+                                       <a href="" title="Add to Compare"><span class="icon-bar-chart product__icon"></span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div> 
+                        <div class="product">
+                            <picture class="product-list__pic">
+                                <a href="/layout-product-page.html"><img src="assets/img/product-item/image 2.svg" alt="Product image"></a>
+                            </picture>
+    
+                            <div class="product__info">
+                                <h2 class="product__list__title">Innova Pulsar</a></h2>
+                                
+                                <div class="rating__summary">
+                                   <span class="icon-star"></span>
+                                   <p class="rating__num">2</p>
+                                </div>
+    
+                                <p class="price">As low as <strong>$21.99</strong></p>
+    
+                                <form action="" class="product_form">
+                                    <input type="hidden" name="product" value="">
+                                    <button type="submit" class="button button--primary product__button">Add to Cart</button>
+                                </form>
+                                <ul class="product__icons">
+                                    <li>
+                                       <a href="" title="Add to wishlist"><span class="icon-heart product__icon"></span></a>
+                                    </li>
+                                    <li>
+                                       <a href="" title="Add to Compare"><span class="icon-bar-chart product__icon"></span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div> 
+                        <div class="product">
+                            <picture class="product-list__pic">
+                                <a href="/layout-product-page.html"><img src="assets/img/product-item/image 2.svg" alt="Product image"></a>
+                            </picture>
+    
+                            <div class="product__info">
+                                <h2 class="product__list__title">Innova Pulsar</a></h2>
+                                
+                                <div class="rating__summary">
+                                   <span class="icon-star"></span>
+                                   <p class="rating__num">2</p>
+                                </div>
+    
+                                <p class="price">As low as <strong>$21.99</strong></p>
+    
+                                <form action="" class="product_form">
+                                    <input type="hidden" name="product" value="">
+                                    <button type="submit" class="button button--primary product__button">Add to Cart</button>
+                                </form>
+                                <ul class="product__icons">
+                                    <li>
+                                       <a href="" title="Add to wishlist"><span class="icon-heart product__icon"></span></a>
+                                    </li>
+                                    <li>
+                                       <a href="" title="Add to Compare"><span class="icon-bar-chart product__icon"></span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div> 
+                        <div class="product">
+                            <picture class="product-list__pic">
+                                <a href="/layout-product-page.html"><img src="assets/img/product-item/image 2.svg" alt="Product image"></a>
+                            </picture>
+    
+                            <div class="product__info">
+                                <h2 class="product__list__title">Innova Pulsar</a></h2>
+                                
+                                <div class="rating__summary">
+                                   <span class="icon-star"></span>
+                                   <p class="rating__num">2</p>
+                                </div>
+    
+                                <p class="price">As low as <strong>$21.99</strong></p>
+    
+                                <form action="" class="product_form">
+                                    <input type="hidden" name="product" value="">
+                                    <button type="submit" class="button button--primary product__button">Add to Cart</button>
+                                </form>
+                                <ul class="product__icons">
+                                    <li>
+                                       <a href="" title="Add to wishlist"><span class="icon-heart product__icon"></span></a>
+                                    </li>
+                                    <li>
+                                       <a href="" title="Add to Compare"><span class="icon-bar-chart product__icon"></span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div> 
+                        <div class="product">
+                            <picture class="product-list__pic">
+                                <a href="/layout-product-page.html"><img src="assets/img/product-item/image 2.svg" alt="Product image"></a>
+                            </picture>
+    
+                            <div class="product__info">
+                                <h2 class="product__list__title">Innova Pulsar</a></h2>
+                                
+                                <div class="rating__summary">
+                                   <span class="icon-star"></span>
+                                   <p class="rating__num">2</p>
+                                </div>
+    
+                                <p class="price">As low as <strong>$21.99</strong></p>
+    
+                                <form action="" class="product_form">
+                                    <input type="hidden" name="product" value="">
+                                    <button type="submit" class="button button--primary product__button">Add to Cart</button>
+                                </form>
+                                <ul class="product__icons">
+                                    <li>
+                                       <a href="" title="Add to wishlist"><span class="icon-heart product__icon"></span></a>
+                                    </li>
+                                    <li>
+                                       <a href="" title="Add to Compare"><span class="icon-bar-chart product__icon"></span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div> 
+                        <div class="product">
+                            <picture class="product-list__pic">
+                                <a href="/layout-product-page.html"><img src="assets/img/product-item/image 2.svg" alt="Product image"></a>
+                            </picture>
+    
+                            <div class="product__info">
+                                <h2 class="product__list__title">Innova Pulsar</a></h2>
+                                
+                                <div class="rating__summary">
+                                   <span class="icon-star"></span>
+                                   <p class="rating__num">2</p>
+                                </div>
+    
+                                <p class="price">As low as <strong>$21.99</strong></p>
+    
+                                <form action="" class="product_form">
+                                    <input type="hidden" name="product" value="">
+                                    <button type="submit" class="button button--primary product__button">Add to Cart</button>
+                                </form>
+                                <ul class="product__icons">
+                                    <li>
+                                       <a href="" title="Add to wishlist"><span class="icon-heart product__icon"></span></a>
+                                    </li>
+                                    <li>
+                                       <a href="" title="Add to Compare"><span class="icon-bar-chart product__icon"></span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div> 
+                        <div class="product">
+                            <picture class="product-list__pic">
+                                <a href="/layout-product-page.html"><img src="assets/img/product-item/image 2.svg" alt="Product image"></a>
+                            </picture>
+    
+                            <div class="product__info">
+                                <h2 class="product__list__title">Innova Pulsar</a></h2>
+                                
+                                <div class="rating__summary">
+                                   <span class="icon-star"></span>
+                                   <p class="rating__num">2</p>
+                                </div>
+    
+                                <p class="price">As low as <strong>$21.99</strong></p>
+    
+                                <form action="" class="product_form">
+                                    <input type="hidden" name="product" value="">
+                                    <button type="submit" class="button button--primary product__button">Add to Cart</button>
+                                </form>
+                                <ul class="product__icons">
+                                    <li>
+                                       <a href="" title="Add to wishlist"><span class="icon-heart product__icon"></span></a>
+                                    </li>
+                                    <li>
+                                       <a href="" title="Add to Compare"><span class="icon-bar-chart product__icon"></span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="view-wrap list-view" style="display: none;">
+                        <div class="product-list">
+                            <picture class="product-list__pic">
+                                <a href="/layout-product-page.html"><img src="assets/img/product-item/image 2.svg" alt="Product image"></a>
+                            </picture>
+    
+                            <div class="product__info">
+                                <h2 class="product__list__title">Innova Pulsar</a></h2>
+                                
+                                <div class="rating__summary">
+                                   <span class="icon-star"></span>
+                                   <p class="rating__num">2</p>
+                                </div>
+    
+                                <p class="price">As low as <strong>$21.99</strong></p>
+    
+                                <form action="" class="product_form">
+                                    <input type="hidden" name="product" value="">
+                                    <button type="submit" class="button button--primary product__button">Add to Cart</button>
+                                </form>
+                                <ul class="product__icons">
+                                    <li>
+                                       <a href="" title="Add to wishlist"><span class="icon-heart product__icon"></span></a>
+                                    </li>
+                                    <li>
+                                       <a href="" title="Add to Compare"><span class="icon-bar-chart product__icon"></span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="product-list">
+                            <picture class="product-list__pic">
+                                <a href="/layout-product-page.html"><img src="assets/img/product-item/image 2.svg" alt="Product image"></a>
+                            </picture>
+    
+                            <div class="product__info">
+                                <h2 class="product__list__title">Innova Pulsar</a></h2>
+                                
+                                <div class="rating__summary">
+                                   <span class="icon-star"></span>
+                                   <p class="rating__num">2</p>
+                                </div>
+    
+                                <p class="price">As low as <strong>$21.99</strong></p>
+    
+                                <form action="" class="product_form">
+                                    <input type="hidden" name="product" value="">
+                                    <button type="submit" class="button button--primary product__button">Add to Cart</button>
+                                </form>
+                                <ul class="product__icons">
+                                    <li>
+                                       <a href="" title="Add to wishlist"><span class="icon-heart product__icon"></span></a>
+                                    </li>
+                                    <li>
+                                       <a href="" title="Add to Compare"><span class="icon-bar-chart product__icon"></span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div> 
+                        <div class="product-list">
+                            <picture class="product-list__pic">
+                                <a href="/layout-product-page.html"><img src="assets/img/product-item/image 2.svg" alt="Product image"></a>
+                            </picture>
+    
+                            <div class="product__info">
+                                <h2 class="product__list__title">Innova Pulsar</a></h2>
+                                
+                                <div class="rating__summary">
+                                   <span class="icon-star"></span>
+                                   <p class="rating__num">2</p>
+                                </div>
+    
+                                <p class="price">As low as <strong>$21.99</strong></p>
+    
+                                <form action="" class="product_form">
+                                    <input type="hidden" name="product" value="">
+                                    <button type="submit" class="button button--primary product__button">Add to Cart</button>
+                                </form>
+                                <ul class="product__icons">
+                                    <li>
+                                       <a href="" title="Add to wishlist"><span class="icon-heart product__icon"></span></a>
+                                    </li>
+                                    <li>
+                                       <a href="" title="Add to Compare"><span class="icon-bar-chart product__icon"></span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div> 
+                        <div class="product-list">
+                            <picture class="product-list__pic">
+                                <a href="/layout-product-page.html"><img src="assets/img/product-item/image 2.svg" alt="Product image"></a>
+                            </picture>
+    
+                            <div class="product__info">
+                                <h2 class="product__list__title">Innova Pulsar</a></h2>
+                                
+                                <div class="rating__summary">
+                                   <span class="icon-star"></span>
+                                   <p class="rating__num">2</p>
+                                </div>
+    
+                                <p class="price">As low as <strong>$21.99</strong></p>
+    
+                                <form action="" class="product_form">
+                                    <input type="hidden" name="product" value="">
+                                    <button type="submit" class="button button--primary product__button">Add to Cart</button>
+                                </form>
+                                <ul class="product__icons">
+                                    <li>
+                                       <a href="" title="Add to wishlist"><span class="icon-heart product__icon"></span></a>
+                                    </li>
+                                    <li>
+                                       <a href="" title="Add to Compare"><span class="icon-bar-chart product__icon"></span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+                
+                <hr class="main__line bottom__line">
+
+                <div class="bottom_options">
+                    <ul class="pagination pagination__list">
+                        <li class="pagination__item"><a class="pagination__link active">1</a></li>
+                        <li class="pagination__item"><a class="pagination__link" href="">2</a></li>
+                        <li class="pagination__item"><a class="pagination__link" href="">3</a></li>
+                    </ul>
+
+                    <div class="limiter">
+                        <label for="limiter" class="limiter__title">Show</label>
+                        <select name="limiter" id="limiter" type="select">
+                            <option value="8">8</option>
+                            <option value="16">16</option>
+                            <option value="99">99</option>
+                        </select>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <aside id="sidebar" class="layered-nav">
+            <h2 class="layered-nav__title">Shopping options</h2>
+            <button id="closeSidebar" class="button--no-styles header__buttons layerd-nav_button">
+                <span>Close</span>
+                <span class="icon-x-circle"></span>
+            </button>
+
+            <dl class="layered-nav__list">
+                <dt id="bar" class="layered-nav__list-title" data-view="color">Color<span class="icon-chevron-down layered__icon"></span></dt>
+                <dd class="layered-nav__list-options color">
+                    <ul>
+                        <li>
+                            <a href="" class="option orange">Orange</a>
+                        </li>
+                        <li>
+                            <a href="" class="option">Black</a>
+                        </li>
+                        <li>
+                            <a href="" class="option">Blue</a>
+                        </li>
+                    </ul>
+                </dd>
+                <dt class="layered-nav__list-title" data-view="size">Size<span class="icon-chevron-down layered__icon"></span></dt>
+                <dd class="layered-nav__list-options size">
+                    <ul>
+                        <li>
+                            <input class="" type="checkbox" id="size_s" name="size_s">
+                            <label for="size_s">S</label>
+                        </li>
+                        <li>
+                            <input class="" type="checkbox" id="size_m" name="size_m">
+                            <label for="size_m">M</label>
+                        </li>
+                        <li>
+                            <input class="" type="checkbox" id="size_l" name="size_l">
+                            <label for="size_l">L</label>
+                        </li>
+                    </ul>
+                </dd>
+                <dt class="layered-nav__list-title" data-view="material">Material<span class="icon-chevron-down layered__icon"></span></dt>
+                <dd class="layered-nav__list-options material">
+                    <ul>
+                        <li>
+                            <input class="" type="checkbox" id="material_pvc" name="material_pvc">
+                            <label for="material_pvc">Strong PVC</label>
+                        </li>
+                        <li>
+                            <input class="" type="checkbox" id="material_composit" name="material_composit">
+                            <label for="material_composit">Carbon</label>
+                        </li>
+                    </ul>
+                </dd>
+                <dt class="layered-nav__list-title" data-view="price">Price<span class="icon-chevron-down layered__icon"></span></dt>
+                <dd class="layered-nav__list-options price">
+                    <input type="range" id="price_range" name="price_range">
+                    <label for="price_range">Select price range</label>
+                </dd>
+            </dl>
+        </aside>
+    </div>
+
+    <footer class="footer">
+        <section class="newsletter__deatils">
+            <div class="container">
+                <h2 class="newsletter__title">Newsletter</h2>
+                <p tabindex="0">Sign up for our newsletter and be the first to find out about new products, discounts and more.</p>
+                <form action="">
+                    <fieldset class="newsletter__content">
+                        <legend class="visualy-hidden">Grabsee Newsletter Form</legend> 
+                        <label class="visualy-hidden" for="newsletter" tabindex="0">Enter your email in order to become the Grabsee subscriber</label>
+                        <input class="newsletter__email" placeholder="Enter your email address" name="newsletter" type="email">
+                        <button class="button button--primary" type="submit">Subscribe</button>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+
+        <section class="summary">
+            <div class="container summary__content">
+                <div class="footer-details">
+                    <div id="showCategories" class="footer-details__inner">
+                        <h2 class="footer__title footer-details__inner-title">Categories</h2>
+                        <span id="chevronDown" class="icon-chevron-down footer-details__inner-icon"></span>
+                    </div>
+                    <div id="footerCategories" class="footer-details__content">
+                        <ul>
+                            <li><a class="footer-details__content-links" href="">Frisbee</a></li>
+                            <li><a class="footer-details__content-links" href="">Gear</a></li>
+                            <li><a class="footer-details__content-links" href="">Accessories</a></li>
+                            <li><a class="footer-details__content-links" href="">Gifts</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="showContact" class="footer-details">
+                    <div class="footer-details__inner">
+                        <h2 class="footer__title footer-details__inner-title">Contact us</h2>
+                        <span class="icon-chevron-down footer-details__inner-icon"></span>
+                    </div>
+                    <div id="footerContact" class="footer-details__content">
+                        <ul>
+                           <li tabindex="0"><address>Trg Slobode 6</address></li>
+                           <li><a class="footer-details__content-links" href="tel:+385958811630">+385 95 8811630</a></li>
+                           <li><a class="footer-details__content-links" href="mailto:filip.svetlicic@gmail.com">filip.svetlicic@gmail.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container copyright">
+            <small class="copyright__text" tabindex="0">Copyright &reg; 2021 Grabsbee</small>
+        </div>
+    </footer>
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/category.js"></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+.footer {
+  background-color: var(--pure-black);
+  color: var(--text__color__invert);
+  clear: both;
+  width:100%;
+}
+
+.newsletter__deatils {
+  background-color: var(--secondary__color);
+  color: var(--text__color__invert);
+  text-align: center;
+  @mixin aspect-ratio-calc-old 250, 360;
+  padding-top: pxtorem(21);
+
+  @media (--large) {
+    @mixin aspect-ratio-calc-old 216, 1600;
+  };
+}
+
+.newsletter__title {
+  font-family: var(--body__type);
+  @mixin section-title;
+  font-size: 12px;
+
+  @media (--large) {
+    font-size: 14px;
+  }
+}
+
+.newsletter__content {
+  display: grid;
+  grid-gap: 10px;
+
+  @media(--large) {
+    display: grid;
+    grid-template-columns: 400px auto;
+    justify-content: center;
+    grid-gap: 15px;
+  }
+}
+
+.newsletter__email {
+  height: 48px !important;
+}
+
+.summary {
+  background-color: var(--primary__color);
+  color: var(--text__color__invert);
+  padding-top: pxtorem(21);
+
+  @media (--large) {
+    @mixin aspect-ratio-calc-old 191, 1600;
+  };
+}
+
+.summary__content {
+  @media (--large){
+    display: grid;
+    justify-content: center;
+    grid-auto-flow: column;
+    grid-gap: 20%;
+    align-content: center;
+  }
+}
+
+.footer-details__inner {
+ cursor: pointer;
+ display: flex;
+ justify-content: space-between;
+}
+
+.footer-details__inner-title {
+  @mixin section-title;
+  font-family: var(--body__type);
+  line-height: 2;
+  font-size: 12px;
+
+  @media (--large) {
+    font-size: 14px;
+  }
+}
+
+.footer-details__content {
+  display: none;
+
+  &.active {
+    display: block;
+  }
+
+  @media(--large){
+    display: block;
+  }
+}
+
+.footer-details__inner-icon {
+  @media (--large) {
+    visibility: hidden;
+  }
+
+}
+
+
+.footer-details__content-links {
+  text-decoration: none;
+  color: var(--text__color__invert);
+  font-weight: normal;
+}
+
+.copyright__text {
+  display: block;
+  line-height: 2;
+  text-align: center;
+  @mixin aspect-ratio-calc-old 42, 360;
+  padding-top: pxtorem(9);
+
+  @media (--large) {
+    @mixin aspect-ratio-calc-old 48, 1600;
+  };
+}
+
+
+

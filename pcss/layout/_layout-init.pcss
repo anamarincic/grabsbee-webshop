@@ -1,0 +1,30 @@
+$container-width: 1280px;
+$gutter-width: 24px;
+
+@lost flexbox flex;
+
+.container {
+  @mixin container $container-width, $gutter-width;
+}
+
+.categories__content {
+  margin: 0 auto;
+  width:100%;
+}
+
+.main__content {
+   @media (--large) {
+    float: right;
+    width: 75%; 
+  }
+  
+}
+
+aside {
+  @media (--large) {
+  float: left;
+  width: 23%; 
+  }
+}
+
+

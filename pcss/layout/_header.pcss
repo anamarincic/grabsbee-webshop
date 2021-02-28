@@ -1,0 +1,39 @@
+.logo {
+  margin-bottom: 0;
+}
+
+.logo__img {
+  height: 21px;
+  @media (--large) {
+    height: 48px;
+  }
+}
+
+.header {
+  position:relative;
+  background-color: var(--primary__color);
+  @mixin aspect-ratio-calc-old 63, 360;
+  @media (--large) {
+    height: 144px;
+    padding-bottom: 0px;
+  }
+}
+
+.header__content {
+  /*@mixin flex $direction, center, space-between, nowrap;*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.header__buttons {
+  color: white;
+  padding-left: pxtorem(10);
+  padding-right: pxtorem(10);
+}
+
+.header__drawers-list__item {
+  display: inline-block;
+}

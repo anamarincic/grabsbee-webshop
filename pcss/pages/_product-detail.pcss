@@ -1,0 +1,153 @@
+.grid-wrap {
+    display: grid;
+    grid-template-columns: 1fr;
+    @media (--large) {
+       grid-template-columns: 1fr 1fr;
+       grid-gap: 50px;
+    }
+    
+}
+
+.small-img {
+    &.active{
+        border: 1px solid var(--secondary__color);
+    }
+    
+} 
+
+.small-img-row {
+    display: flex;
+}
+
+.small-img-col {
+    flex-basis: 18%;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.product__img{
+    padding-right: 10px;
+}
+
+.product__available {
+    color: var(--primary__color);
+    font-size: 16px;
+    margin-bottom: 0px;
+}
+
+.product__sku {
+    color: var(--primary__color);
+}
+
+.product__quote {
+    color: var(--link__color);
+}
+
+.price-box {
+    font-family: var(--body__type);
+    font-size: 25px;
+    margin: 10px 0px 10px;
+}
+
+.product__price {
+    font-weight: 700;
+}
+
+.products__colors {
+    display:inline-block;
+}
+
+.product__color{
+    display:inline-block;
+    margin-top: 5px;
+    &.active{
+        border: 2px solid black;
+    }
+}
+
+.qty {
+    width: 62px;
+    border: 1px solid #9C9C9C;
+    height: 48px;
+}
+
+.qty_form {
+    display: block;
+    @media (--large){
+        display: flex;
+    }
+}
+
+.button_shop {
+    position: relative;
+    top: 20px;
+    left: 0px;
+    padding: 0px 100px;
+    @media(--large){
+        left: 24px;
+    }
+
+} 
+
+.user_review {
+    display: inline-flex;
+    width: 250px;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.user_review-icon {
+    color: var(--primary__color);
+    text-decoration: none;
+}
+
+.product-information {
+    margin: 30px 0px 30px;
+}
+
+.product-information__btn {
+    margin-bottom: 20px;
+}
+
+.product-deatils__title {
+    color: var(--link__color);
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: var(--body__type);
+   
+    @media (--large) {
+    font-size: 16px;
+    text-transform: capitalize;
+    }
+}
+
+.product-description__title {
+    color: var(--link__color);
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: var(--body__type);
+    
+    @media (--large) {
+    margin-left: 10px;
+    font-size: 16px;
+    text-transform: capitalize;
+    }
+}
+
+.description {
+    display: none;
+}
+
+.description-table tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+.description-table {
+    width: 400px;
+}
+
+.description-table tr {
+     height: 30px;
+}
+
+
